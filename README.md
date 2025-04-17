@@ -13,13 +13,14 @@ Perfect for:
 
 | Script | Description |
 |--------|-------------|
-| `01_system_basics.sh` | Xcode CLI tools, Rosetta, Homebrew, basic folder structure |
-| `02_dev_tools.sh`     | Android SDK, Xcode tools, React Native, MongoDB, Docker |
-| `03_terminal_setup.sh`| iTerm2, Oh My Zsh, Powerlevel10k, custom aliases |
-| `04_env_managers.sh`  | `nvm`, `pyenv`, `asdf` – manage all your runtimes |
-| `05_gpg_ssh_setup.sh` | Generate GPG and SSH keys for GitHub/Bitbucket |
-| `upload_ssh_keys.sh`  | Securely uploads SSH keys via GitHub + Bitbucket API |
-| `run_all.sh`          | Run all setup scripts sequentially in one go |
+| `01_system_basics.sh`    | Xcode CLI tools, Rosetta, Homebrew, basic folder structure |
+| `02_dev_tools.sh`        | Android SDK, Xcode tools, React Native, MongoDB, Docker |
+| `03_terminal_setup.sh`   | iTerm2, Oh My Zsh, Powerlevel10k, custom aliases |
+| `04_env_managers.sh`     | `nvm`, `pyenv`, `asdf` – manage all your runtimes |
+| `05_gpg_ssh_setup.sh`    | Generate GPG and SSH keys for GitHub/Bitbucket |
+| `06_react_and_lambda.sh` | Sets up React.js tooling and AWS Lambda local dev environment |
+| `upload_ssh_keys.sh`     | Securely uploads SSH keys via GitHub + Bitbucket API |
+| `run_all.sh`             | Run all setup scripts sequentially in one go |
 
 ---
 
@@ -98,6 +99,3 @@ cp dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/
 ## 🤘 Contribute
 
 Found a bug or want to add your tools? PRs are welcome!
-
-
-| `06_react_and_lambda.sh` | Sets up React.js tooling and AWS Lambda local dev environment |
