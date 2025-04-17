@@ -6,7 +6,6 @@ Perfect for:
 - Native mobile developers (iOS + Android)
 - React Native
 - Full-stack JS/Python
-- VP R&Ds who want reliable, consistent environments 😎
 
 ---
 
