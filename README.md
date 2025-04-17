@@ -99,3 +99,6 @@ cp dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/
 ## 🤘 Contribute
 
 Found a bug or want to add your tools? PRs are welcome!
+
+
+| `06_react_and_lambda.sh` | Sets up React.js tooling and AWS Lambda local dev environment |
