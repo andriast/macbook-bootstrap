@@ -25,3 +25,27 @@ chmod +x *.sh
 You’ll find VS Code and Xcode settings under `/dotfiles`.
 
 Customize and PR welcome 🤘
+
+
+---
+
+## 🧹 Cleanup Scripts
+
+If you want to reset your environment before re-running any step, use the provided cleanup scripts:
+
+| Cleanup Script                  | Purpose                                                    |
+|--------------------------------|------------------------------------------------------------|
+| `01_cleanup_system_basics.sh`  | Remove folders and Xcode CLI tools setup                  |
+| `02_cleanup_dev_tools.sh`      | Uninstall Android, iOS, MongoDB, Docker dev tools         |
+| `03_cleanup_terminal_setup.sh` | Remove shell customizations and fonts                     |
+| `04_cleanup_env_managers.sh`   | Remove nvm, pyenv, asdf and config                        |
+| `05_cleanup_gpg_ssh.sh`        | Delete GPG keys and SSH key files                         |
+| `06_cleanup_react_lambda.sh`   | Remove React, AWS CLI, Serverless tools                   |
+| `cleanup_all.sh`               | Run all the above scripts in one go                       |
+
+```bash
+chmod +x cleanup_all.sh
+./cleanup_all.sh
+```
+
+This is helpful for debugging or rerunning the setup from a clean state.

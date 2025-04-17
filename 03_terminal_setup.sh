@@ -1,5 +1,12 @@
 #!/bin/bash
 
+check_step() {
+  if [ $? -ne 0 ]; then
+    echo "❌ Step failed. Try running manually: $1"
+    exit 1
+  fi
+}
+
 # Terminal customizations: Oh My Zsh, Powerlevel10k, aliases
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
@@ -8,8 +15,10 @@ rm -f ~/.zshrc
 touch ~/.zshrc
 
 brew install romkatv/powerlevel10k/powerlevel10k
+check_step "brew install romkatv/powerlevel10k/powerlevel10k"
 brew tap homebrew/cask-fonts
 brew install --cask font-meslo-lg-nerd-font
+check_step "brew install --cask font-meslo-lg-nerd-font"
 
 cat << 'EOF' >> ~/.zshrc
 export ZSH="$HOME/.oh-my-zsh"
